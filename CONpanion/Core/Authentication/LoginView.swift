@@ -10,20 +10,34 @@ import SwiftUI
 struct LoginView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            ZStack{
                 RoundedRectangle(cornerRadius: 10, style: .continuous)
                     .foregroundStyle(.linearGradient(colors: [.customGradientColour, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
                     .frame(width:1000, height:400)
                     .rotationEffect(.degrees(135))
                     .offset(y: -350)
                 
-                // text fields
-                
-                // sign in button
-                
-                //registration link
-                
-                //forgotten password link
+                VStack(spacing: 20) {
+                    Text("Your CONpanion Missed You")
+                        .foregroundColor(.white)
+                        .font(.system(size: 35, weight: .bold, design: .rounded))
+                        .lineLimit(2)
+                        .offset( y: -250)
+                    
+                    Text("Log in:")
+                        .foregroundColor(.white)
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .offset(x: -150, y: -200)
+                    
+                    
+                    // text fields
+                    
+                    // sign in button
+                    
+                    //registration link
+                    
+                    //forgotten password link
+                }
             }
             .containerRelativeFrame([.horizontal, .vertical])
             .background(Color.black)
