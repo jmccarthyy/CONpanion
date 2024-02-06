@@ -51,8 +51,10 @@
 		235F1EF62B728E6000FDD8DB /* CONpanion */ = {
 			isa = PBXGroup;
 			children = (
-				235F1EF72B728E6000FDD8DB /* CONpanionApp.swift */,
-				235F1EF92B728E6000FDD8DB /* ContentView.swift */,
+				235F1F0C2B7290E100FDD8DB /* App */,
+				235F1F0D2B7290E900FDD8DB /* Components */,
+				235F1F0E2B72911C00FDD8DB /* Core */,
+				235F1F0F2B72912600FDD8DB /* Model */,
 				235F1EFB2B728E6300FDD8DB /* Assets.xcassets */,
 				235F1EFD2B728E6300FDD8DB /* Preview Content */,
 			);
@@ -65,6 +67,60 @@
 				235F1EFE2B728E6300FDD8DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		235F1F0C2B7290E100FDD8DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				235F1EF72B728E6000FDD8DB /* CONpanionApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		235F1F0D2B7290E900FDD8DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		235F1F0E2B72911C00FDD8DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				235F1F112B72919600FDD8DB /* Authentication */,
+				235F1F122B7291A500FDD8DB /* Profile */,
+				235F1F102B72917A00FDD8DB /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		235F1F0F2B72912600FDD8DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		235F1F102B72917A00FDD8DB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				235F1EF92B728E6000FDD8DB /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		235F1F112B72919600FDD8DB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		235F1F122B7291A500FDD8DB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
