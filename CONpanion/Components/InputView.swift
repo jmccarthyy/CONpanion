@@ -14,7 +14,7 @@ struct InputView: View {
     let isSecureField = false
     
     var body: some View {
-        VStack{
+        VStack (alignment: .leading, spacing: 12){
             Text(title)
                 .foregroundColor(Color(.darkGray))
                 .fontWeight(.semibold)
@@ -27,6 +27,8 @@ struct InputView: View {
                 TextField(placeholder, text: $text)
                     .font(.system(size: 14))
             }
+            
+            Divider()
         }
     }
 }
