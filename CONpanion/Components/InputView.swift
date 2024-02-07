@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct InputView: View {
+    @Binding var text: String
+    let title: String
+    let placeholder: String
+    let isSecureField = false
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
