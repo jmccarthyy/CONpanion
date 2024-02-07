@@ -19,6 +19,12 @@ struct InputView: View {
                 .foregroundColor(Color(.darkGray))
                 .fontWeight(.semibold)
                 .font(.footnote)
+            
+            if isSecureField {
+                
+            } else {
+                
+            }
         }
     }
 }
