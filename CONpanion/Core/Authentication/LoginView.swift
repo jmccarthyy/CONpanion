@@ -73,7 +73,8 @@ struct LoginView: View {
                     
                     //registration link
                     NavigationLink {
-                        
+                        RegistrationView()
+                            .navigationBarBackButtonHidden(true)
                     } label: {
                         HStack (spacing: 4){
                             Text("Not yet been introduced?")
@@ -83,7 +84,7 @@ struct LoginView: View {
                         }
                         .foregroundColor(.white)
                     }
-                    .offset(y: -20)
+                    .offset(y: -40)
                     
 
                    
