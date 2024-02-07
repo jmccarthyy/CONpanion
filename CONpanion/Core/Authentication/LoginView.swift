@@ -86,8 +86,6 @@ struct LoginView: View {
                     }
                     .offset(y: -40)
                     
-
-                   
                 }
             }
             .containerRelativeFrame([.horizontal, .vertical])
