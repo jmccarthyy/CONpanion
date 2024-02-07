@@ -90,7 +90,7 @@ struct LoginView: View {
                 }
             }
             .containerRelativeFrame([.horizontal, .vertical])
-            .background(Color.black)
+            .background(Color(.black))
         }
     }
 }

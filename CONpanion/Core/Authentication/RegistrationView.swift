@@ -9,7 +9,16 @@ import SwiftUI
 
 struct RegistrationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            //background
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.customGradientColour, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .frame(width:1000, height:400)
+                .rotationEffect(.degrees(135))
+                .offset(y: -350)
+        }
+        .containerRelativeFrame([.horizontal, .vertical])
+        .background(Color(.black))
     }
 }
 
