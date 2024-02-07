@@ -20,17 +20,16 @@ struct LoginView: View {
                 VStack(spacing: 20) {
                     Text("Your CONpanion Missed You")
                         .foregroundColor(.white)
-                        .font(.system(size: 35, weight: .bold, design: .rounded))
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
                         .lineLimit(2)
                         .offset( y: -250)
                     
                     Text("Log in:")
                         .foregroundColor(.white)
                         .font(.system(size: 20, weight: .bold, design: .rounded))
-                        .offset(x: -150, y: -200)
+                        .offset(x: -150, y: -210)
                     
-                    
-                    // text fields
+                    // form fields
                     
                     // sign in button
                     
