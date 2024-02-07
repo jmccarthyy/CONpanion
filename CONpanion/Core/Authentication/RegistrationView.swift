@@ -12,6 +12,7 @@ struct RegistrationView: View {
     @State private var firstName = ""
     @State private var password = ""
     @State private var confirmPassword = ""
+    @Environment (\.dismiss) var dismiss
     var body: some View {
         VStack{
             //background
@@ -19,7 +20,7 @@ struct RegistrationView: View {
                 .foregroundStyle(.linearGradient(colors: [.customGradientColour, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .frame(width:1000, height:400)
                 .rotationEffect(.degrees(135))
-                .offset(y: -50)
+                .offset(y: -100)
             
             VStack(spacing: 24) {
                 //text
@@ -69,7 +70,7 @@ struct RegistrationView: View {
                 
                 // registration button
                 Button{
-                    print("Create user...")
+                    print("Create user account...")
                 } label: {
                     HStack{
                         Text("CREATE ACCOUNT")
@@ -84,8 +85,8 @@ struct RegistrationView: View {
                 .offset(y: -200)
                 
                 //registration link
-                NavigationLink {
-                    
+                Button {
+                    dismiss()
                 } label: {
                     HStack (spacing: 4){
                         Text("Already been introduced?")
