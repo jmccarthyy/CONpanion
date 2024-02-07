@@ -51,6 +51,18 @@ struct LoginView: View {
                         .padding(.horizontal)
                     
                     //forgotten password link
+                    NavigationLink {
+                        ForgottenPasswordView()
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        HStack (spacing: 4){
+                            Text("I've Forgotten My Password")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .font(.system(size: 14))
+                        }
+                        .foregroundColor(.white)
+                    }
+                    .offset(y: -250)
                     
                     // sign in button
                     Button{
