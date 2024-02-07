@@ -15,6 +15,7 @@
 		235F1F162B73C19C00FDD8DB /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1F152B73C19C00FDD8DB /* InputView.swift */; };
 		235F1F182B73DBE800FDD8DB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1F172B73DBE800FDD8DB /* RegistrationView.swift */; };
 		235F1F1A2B73E99800FDD8DB /* ForgottenPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1F192B73E99700FDD8DB /* ForgottenPasswordView.swift */; };
+		235F1F1C2B73EBB400FDD8DB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1F1B2B73EBB400FDD8DB /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		235F1F152B73C19C00FDD8DB /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		235F1F172B73DBE800FDD8DB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		235F1F192B73E99700FDD8DB /* ForgottenPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordView.swift; sourceTree = "<group>"; };
+		235F1F1B2B73EBB400FDD8DB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		235F1F122B7291A500FDD8DB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				235F1F1B2B73EBB400FDD8DB /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				235F1F162B73C19C00FDD8DB /* InputView.swift in Sources */,
 				235F1EFA2B728E6000FDD8DB /* ContentView.swift in Sources */,
 				235F1EF82B728E6000FDD8DB /* CONpanionApp.swift in Sources */,
+				235F1F1C2B73EBB400FDD8DB /* ProfileView.swift in Sources */,
 				235F1F182B73DBE800FDD8DB /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
