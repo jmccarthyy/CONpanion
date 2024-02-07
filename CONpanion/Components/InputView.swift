@@ -14,7 +14,12 @@ struct InputView: View {
     let isSecureField = false
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(title)
+                .foregroundColor(Color(.darkGray))
+                .fontWeight(.semibold)
+                .font(.footnote)
+        }
     }
 }
 
