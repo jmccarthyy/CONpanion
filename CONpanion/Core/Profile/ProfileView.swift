@@ -19,6 +19,18 @@ struct ProfileView: View {
                         .frame(width:72, height: 72)
                         .background(Color(.systemGray3))
                         .clipShape(Circle())
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Conor McGregor")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding(.top, 4)
+                        
+                        Text("test@email.com")
+                            .font(.footnote)
+                            .accentColor(.black)
+                        
+                    }
                 }
                 
             }
