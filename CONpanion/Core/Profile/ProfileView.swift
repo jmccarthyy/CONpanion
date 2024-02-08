@@ -53,6 +53,7 @@ struct ProfileView: View {
             
             Section("Accessibility"){
                 
+                HStack{
                 Button {
                     print("Accessibility selected...")
                 } label: {
@@ -60,7 +61,16 @@ struct ProfileView: View {
                                     title: "Accessibility",
                                     tintColor: Color(.systemGray))
                 }
+                    
+                Spacer()
+                    
+                Image(systemName: "chevron.right")
+                    .imageScale(.small)
+                    .foregroundColor(Color(.systemGray))
                 
+                }
+                
+                HStack{
                 Button {
                     print("Font size selected...")
                 } label: {
@@ -69,12 +79,29 @@ struct ProfileView: View {
                                 tintColor: Color(.systemGray))
                 }
                 
+                Spacer()
+                    
+                Image(systemName: "chevron.right")
+                    .imageScale(.small)
+                    .foregroundColor(Color(.systemGray))
+                
+                }
+                
+                HStack{
                 Button {
                     print("App appearance selected...")
                 } label: {
                     SettingsRowView(imageName: "eye",
                                     title: "App Appearance",
                                     tintColor: Color(.systemGray))
+                }
+                
+                Spacer()
+                    
+                Image(systemName: "chevron.right")
+                    .imageScale(.small)
+                    .foregroundColor(Color(.systemGray))
+                
                 }
                 
             }
