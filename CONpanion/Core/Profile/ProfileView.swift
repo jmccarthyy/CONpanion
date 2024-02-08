@@ -68,6 +68,11 @@ struct ProfileView: View {
             }
             
             Section("Account"){
+                Button {
+                    print("Sign out...")
+                } label: {
+                    SettingsRowView(imageName: "arrow.left.circle.fill", title: "Sign Out", tintColor: Color(.red))
+                }
             }
             
         }
