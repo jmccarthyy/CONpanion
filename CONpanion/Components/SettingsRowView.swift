@@ -13,7 +13,16 @@ struct SettingsRowView: View {
     let tintColor: Color
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 12){
+            Image(systemName: imageName)
+                .imageScale(.small)
+                .font(.title)
+                .foregroundColor(tintColor)
+            
+            Text(title)
+                .font(.subheadline)
+                .foregroundColor(.black)
+        }
     }
 }
 
