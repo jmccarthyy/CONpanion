@@ -36,13 +36,34 @@ struct ProfileView: View {
             }
             
             Section("General"){
-                SettingsRowView(imageName: "gear", 
+                HStack{
+                SettingsRowView(imageName: "gear",
                                 title: "Version",
                                 tintColor: Color(.systemGray))
+                
+                
+                Spacer()
+                
+                Text("Alpha")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                
+                }
             }
             
             Section("Accessibility"){
                 
+                SettingsRowView(imageName: "accessibility",
+                                title: "Accessibility",
+                                tintColor: Color(.systemGray))
+                
+                SettingsRowView(imageName: "textformat.size",
+                                title: "Font Size",
+                                tintColor: Color(.systemGray))
+                
+                SettingsRowView(imageName: "eye",
+                                title: "App Appearance",
+                                tintColor: Color(.systemGray))
                 
             }
             
