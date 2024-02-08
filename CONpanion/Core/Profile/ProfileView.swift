@@ -36,15 +36,17 @@ struct ProfileView: View {
             }
             
             Section("General"){
-                
+                SettingsRowView(imageName: "gear", 
+                                title: "Version",
+                                tintColor: Color(.systemGray))
             }
             
             Section("Accessibility"){
                 
+                
             }
             
             Section("Account"){
-                
             }
             
         }
