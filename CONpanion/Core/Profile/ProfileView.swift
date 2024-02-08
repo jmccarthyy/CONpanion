@@ -53,17 +53,29 @@ struct ProfileView: View {
             
             Section("Accessibility"){
                 
-                SettingsRowView(imageName: "accessibility",
-                                title: "Accessibility",
-                                tintColor: Color(.systemGray))
+                Button {
+                    print("Accessibility selected...")
+                } label: {
+                    SettingsRowView(imageName: "accessibility",
+                                    title: "Accessibility",
+                                    tintColor: Color(.systemGray))
+                }
                 
+                Button {
+                    print("Font size selected...")
+                } label: {
                 SettingsRowView(imageName: "textformat.size",
                                 title: "Font Size",
                                 tintColor: Color(.systemGray))
+                }
                 
-                SettingsRowView(imageName: "eye",
-                                title: "App Appearance",
-                                tintColor: Color(.systemGray))
+                Button {
+                    print("App appearance selected...")
+                } label: {
+                    SettingsRowView(imageName: "eye",
+                                    title: "App Appearance",
+                                    tintColor: Color(.systemGray))
+                }
                 
             }
             
