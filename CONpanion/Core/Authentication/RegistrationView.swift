@@ -36,17 +36,17 @@ struct RegistrationView: View {
                     .offset(x: -150, y: -200)
                 
                 // form fields
-                InputView(text: $firstName,
-                          title: "First Name:",
-                          placeholder: "Your Name")
+                InputView(text: $email,
+                          title: "Email Address:",
+                          placeholder: "name@email.com")
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .foregroundColor(.white)
                 .offset(y: -200)
                 .padding(.horizontal)
                 
-                InputView(text: $email,
-                          title: "Email Address:",
-                          placeholder: "name@email.com")
+                InputView(text: $firstName,
+                          title: "First Name:",
+                          placeholder: "Your Name")
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .foregroundColor(.white)
                 .offset(y: -200)
