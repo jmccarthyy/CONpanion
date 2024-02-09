@@ -10,5 +10,18 @@ import Foundation
 struct User: Identifiable, Codable {
     let id: String
     let firstName: String
+    let lastName: String
     let email: String
+    
+    var initials: String {
+        let formatter = PersonNameComponentsFormatter()
+        if let components = formatter.personNameComponents(from: firstName + lastName) {
+            formatter.style = .abbreviated
+            return formatter.string(from: components)
+        }
+        
+        else {
+            return ""
+        }
+    }
 }
