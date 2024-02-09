@@ -9,8 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @State private var email = ""
-    @State private var firstName = ""
-    @State private var lastName = ""
+    @State private var fullName = ""
     @State private var password = ""
     @State private var confirmPassword = ""
     @Environment (\.dismiss) var dismiss
@@ -37,17 +36,9 @@ struct RegistrationView: View {
                     .offset(x: -150, y: -200)
                 
                 // form fields
-                InputView(text: $firstName,
-                          title: "First Name:",
-                          placeholder: "Your First Name")
-                .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
-                .offset(y: -200)
-                .padding(.horizontal)
-                
-                InputView(text: $lastName,
-                          title: "Last Name:",
-                          placeholder: "Your Last Name")
+                InputView(text: $fullName,
+                          title: "Your Name:",
+                          placeholder: "Your Full Name")
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .foregroundColor(.white)
                 .offset(y: -200)
