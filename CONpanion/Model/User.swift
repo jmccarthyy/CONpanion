@@ -20,6 +20,7 @@ struct User: Identifiable, Codable {
             return formatter.string(from: components)
         }
         
+        //change to else -> display default image
         else {
             return ""
         }
