@@ -46,6 +46,7 @@
 		235F1F552B7D38E700FDD8DB /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 235F1F542B7D38E700FDD8DB /* FirebaseRemoteConfigSwift */; };
 		235F1F572B7D38E700FDD8DB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 235F1F562B7D38E700FDD8DB /* FirebaseStorage */; };
 		235F1F592B7D38E700FDD8DB /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 235F1F582B7D38E700FDD8DB /* FirebaseStorageCombine-Community */; };
+		235F1F5D2B7D3E0300FDD8DB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1F5C2B7D3E0300FDD8DB /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		235F1F1D2B75145700FDD8DB /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		235F1F1F2B76612400FDD8DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		235F1F212B7D083200FDD8DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		235F1F5C2B7D3E0300FDD8DB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		235F1F5B2B7D398800FDD8DB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				235F1F5C2B7D3E0300FDD8DB /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235F1F5D2B7D3E0300FDD8DB /* AuthViewModel.swift in Sources */,
 				235F1F1A2B73E99800FDD8DB /* ForgottenPasswordView.swift in Sources */,
 				235F1F142B72938E00FDD8DB /* LoginView.swift in Sources */,
 				235F1F162B73C19C00FDD8DB /* InputView.swift in Sources */,
