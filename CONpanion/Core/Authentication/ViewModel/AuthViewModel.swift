@@ -15,7 +15,7 @@ class AuthViewModel: ObservableObject {
     @Published var currentUser: User?
     
     init() {
-        
+        self.userSession = Auth.auth().currentUser
     }
     
     func signIn(withEmail email: String, password: String) async throws {
