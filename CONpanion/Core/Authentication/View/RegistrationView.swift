@@ -85,6 +85,8 @@ struct RegistrationView: View {
                     .frame(width: UIScreen.main.bounds.width - 32, height: 48)
                 }
                 .background(Color(.white))
+                .disabled(!formIsValid)
+                .opacity(formIsValid ? 1.0 : 0.5)
                 .cornerRadius(10)
                 .offset(y: -200)
                 
@@ -105,6 +107,19 @@ struct RegistrationView: View {
         }
         .containerRelativeFrame([.horizontal, .vertical])
         .background(Color(.black))
+    }
+}
+
+//AuthenticationFormProtocol
+
+extension RegistrationView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 5
+        && !fullName.isEmpty
+        && confirmPassword == password
     }
 }
 
