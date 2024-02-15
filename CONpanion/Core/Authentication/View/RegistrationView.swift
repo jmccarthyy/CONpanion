@@ -62,13 +62,29 @@ struct RegistrationView: View {
                 .offset(y: -200)
                 .padding(.horizontal)
                 
-                InputView(text: $confirmPassword,
-                          title: "Confirm Password:",
-                          placeholder: "Confirm Your Password",
-                          isSecureField: true)
-                .foregroundColor(.white)
-                .offset(y: -200)
-                .padding(.horizontal)
+                ZStack(alignment: .trailing) {
+                    InputView(text: $confirmPassword,
+                              title: "Confirm Password:",
+                              placeholder: "Confirm Your Password",
+                              isSecureField: true)
+                    .foregroundColor(.white)
+                    .offset(y: -200)
+                    .padding(.horizontal)
+                    
+                    if !password.isEmpty && !confirmPassword.isEmpty {
+                        if password == confirmPassword {
+                            Image(systemName: "checkmark.circle.fill")
+                                .imageScale(.large)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(.systemGray))
+                        } else {
+                            Image(systemName: "xmark.circle.fill")
+                                .imageScale(.large)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(.systemRed))
+                        }
+                    }
+                }
                 
                 // registration button
                 Button{
