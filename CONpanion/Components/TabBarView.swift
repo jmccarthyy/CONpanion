@@ -27,7 +27,24 @@ struct TabBarView: View {
     }
     
     var body: some View{
-        Text ("Hello World!")
+        VStack {
+            HStack {
+                //ForEach loop (that iterates through all cases) to hold tabs:
+                ForEach(Tab.allCases, id: \.rawValue){ tab in
+                    Spacer()
+                    Image(systemName: selectedTab == tab ? fillImage: tab.rawValue)
+                    //scaleEffect modifier so that currently selected tab is larger than others
+                        .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
+                    Spacer()
+                }
+            }
+            //TabBar container:
+            .frame(width: nil, height: 60)
+            //.thinMaterial for transferring between light + dark mode (need to change other pages' elements' backgrounds):
+            .background(.thinMaterial)
+            .cornerRadius(10)
+            .padding()
+        }
     }
 }
 
