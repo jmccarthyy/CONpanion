@@ -34,7 +34,9 @@ struct TabBarView: View {
                     Spacer()
                     Image(systemName: selectedTab == tab ? fillImage: tab.rawValue)
                     //scaleEffect modifier so that currently selected tab is larger than others
-                        .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
+                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
+                        .foregroundColor(selectedTab == tab ? .red : .gray)
+                        .font(.system(size: 22))
                     Spacer()
                 }
             }
@@ -50,5 +52,5 @@ struct TabBarView: View {
 
 //Preview is assigned the constant of house as it needs a value to get rid of error
 #Preview {
-    TabBarView(selectedTab: .constant(.home))
+    TabBarView(selectedTab: .constant(.calories))
 }
