@@ -26,6 +26,22 @@ struct TabBarView: View {
         selectedTab.rawValue + ".fill"
     }
     
+    //Computed property to assign unique colour to each tab image
+    private var tabColor: Color {
+        switch selectedTab {
+        case .calories:
+            return .yellow
+        case .dumbbell:
+            return .red
+        case .home:
+            return .blue
+        case .notes:
+            return .green
+        case .profile:
+            return .purple
+        }
+    }
+    
     var body: some View{
         VStack {
             HStack {
