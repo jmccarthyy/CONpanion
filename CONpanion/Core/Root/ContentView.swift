@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .home
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         Group{
             if viewModel.userSession != nil {
                 HomeView()
+                TabBarView(selectedTab: $selectedTab)
             } else {
                 LoginView()
             }
