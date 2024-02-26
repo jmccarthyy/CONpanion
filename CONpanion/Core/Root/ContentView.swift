@@ -19,8 +19,34 @@ struct ContentView: View {
     var body: some View {
         Group{
             if viewModel.userSession != nil {
-                HomeView()
-                TabBarView(selectedTab: $selectedTab)
+                
+                ZStack {
+                    VStack {
+                        TabView(selection: $selectedTab) {
+                            if selectedTab == .calories {
+                                CaloriesView()
+                            }
+                            if selectedTab == .dumbbell {
+                                WorkoutView()
+                            }
+                            if selectedTab == .home {
+                                HomeView()
+                            }
+                            if selectedTab == .notes {
+                                DiaryView()
+                            }
+                            if selectedTab == .profile {
+                                ProfileView()
+                            }
+                        }
+                    }
+                    
+                    VStack {
+                        Spacer()
+                        TabBarView(selectedTab: $selectedTab)
+                    }
+                }
+                
             } else {
                 LoginView()
             }
