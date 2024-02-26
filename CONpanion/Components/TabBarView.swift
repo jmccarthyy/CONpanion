@@ -51,7 +51,7 @@ struct TabBarView: View {
                     Image(systemName: selectedTab == tab ? fillImage: tab.rawValue)
                     //scaleEffect modifier so that currently selected tab is larger than others
                         .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
-                        .foregroundColor(selectedTab == tab ? .red : .gray)
+                        .foregroundColor(selectedTab == tab ? tabColor : .gray)
                         .font(.system(size: 22))
                     //Assigned tab select animation
                         .onTapGesture {
