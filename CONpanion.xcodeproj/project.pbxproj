@@ -173,7 +173,7 @@
 		235F1F0E2B72911C00FDD8DB /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2379CE2B2B88D52B0091F18A /* Screens */,
+				2379CE2B2B88D52B0091F18A /* Main Screens */,
 				235F1F112B72919600FDD8DB /* Authentication */,
 				235F1F122B7291A500FDD8DB /* Profile */,
 				235F1F102B72917A00FDD8DB /* Root */,
@@ -232,7 +232,7 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		2379CE2B2B88D52B0091F18A /* Screens */ = {
+		2379CE2B2B88D52B0091F18A /* Main Screens */ = {
 			isa = PBXGroup;
 			children = (
 				2379CE292B88D3950091F18A /* HomeView.swift */,
@@ -241,7 +241,7 @@
 				239770112B8CD87500968D03 /* WorkoutView.swift */,
 				2379CE2C2B88D54D0091F18A /* Navigation */,
 			);
-			path = Screens;
+			path = "Main Screens";
 			sourceTree = "<group>";
 		};
 		2379CE2C2B88D54D0091F18A /* Navigation */ = {
